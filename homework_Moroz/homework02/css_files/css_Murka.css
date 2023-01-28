@@ -22,11 +22,12 @@ ul li {
 
 ol li {
     list-style-type: upper-roman;
+    border: 1px;
+    background-color: rgb(0, 210, 210);
+    margin: 10px;
 }
 
 img {
     width: 200px;
-    border: 1px;
-    background-color: rgb(0, 210, 210);
-    margin: 10px;
+    
 }
