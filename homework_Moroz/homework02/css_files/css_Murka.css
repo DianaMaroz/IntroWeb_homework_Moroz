@@ -21,11 +21,11 @@ body {
 }
 h1 {
     color: rgba(103, 26, 174, 0.8);
-    font: 'Marker Felt Wide Plain [Rus by', sans-serif;
+    font-family: 'Marker Felt Wide Plain [Rus by', sans-serif;
 }
 h2 {
     color: rgb(155, 38, 227);
-    font: 'Appetite-Italic', sans-serif;
+    font-family: 'Appetite-Italic', sans-serif;
 }
 .big_text {
     font-size: 20px;
