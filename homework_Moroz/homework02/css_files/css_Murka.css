@@ -2,7 +2,7 @@ body {
     background-color: rgb(182, 238, 210);
 }
 h1 {
-    color: rgba(103, 26, 174, 0.2);
+    color: rgba(103, 26, 174, 0.8);
 }
 h2 {
     color: rgb(155, 38, 227);
@@ -22,4 +22,11 @@ ul li {
 
 ol li {
     list-style-type: upper-roman;
+}
+
+img {
+    width: 200px;
+    border: 1px;
+    background-color: rgb(0, 210, 210);
+    margin: 10px;
 }
