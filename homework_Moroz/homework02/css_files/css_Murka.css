@@ -7,12 +7,21 @@
 		url('../fonts/appetite-italic.ttf') format('truetype'), /* Safari, Android, iOS */
 		url('../fonts/appetite-italic.svg#appetite-italic') format('svg'); /* Chrome < 4, Legacy iOS */
 }
+@font-face {
+	font-family: 'Marker Felt Wide Plain [Rus by';
+	src: url('../fonts/marker_felt_wide_plain_rus_by.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/marker_felt_wide_plain_rus_by.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/marker_felt_wide_plain_rus_by.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/marker_felt_wide_plain_rus_by.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/marker_felt_wide_plain_rus_by.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/marker_felt_wide_plain_rus_by.svg#marker_felt_wide_plain_rus_by') format('svg'); /* Chrome < 4, Legacy iOS */
+}
 body {
     background-color: rgb(182, 238, 210);
 }
 h1 {
     color: rgba(103, 26, 174, 0.8);
-    font: 'Appetite-Italic', sans-serif;
+    font: 'Marker Felt Wide Plain [Rus by', sans-serif;
 }
 h2 {
     color: rgb(155, 38, 227);
