@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(182, 238, 210);
+}
+h1 {
+    color: rgba(103, 26, 174, 0.2);
+}
+h2 {
+    color: rgb(155, 38, 227);
+}
+.big_text {
+    font-size: 20px;
+}
+
+#last_point {
+    font-size: 15px;
+    color: rgba(103, 26, 174);
+}
+
+ul li {
+    list-style-type: disc;
+}
+
+ol li {
+    list-style-type: upper-roman;
+}
