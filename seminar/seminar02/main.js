@@ -56,18 +56,42 @@
 // }
 // </script>
 
-let product = 'Бананы'
+// let product = 'Бананы'
 
-switch (product) {
-    case 'Мандарины':
-        alert('Мандарины стоят 100 руб/кг.');
-        break;
-    case 'Бананы':
-        alert('Бананы и груши стоят 70 руб/кг.');
-        break;
-    case 'Груши':
-        alert('Бананы и груши стоят 70 руб/кг.');
-        break;
-    default:
-        alert('Нет такого продукта.'); 
+// switch (product.toLowerCase()) {
+//     case 'мандарины':
+//         alert('Мандарины стоят 100 руб/кг.');
+//         break;
+//     case 'бананы':
+//         alert('Бананы и груши стоят 70 руб/кг.');
+//         break;
+//     case 'груши':
+//         alert('Бананы и груши стоят 70 руб/кг.');
+//         break;
+//     default:
+//         alert('Нет такого продукта.'); 
+// }
+
+// Функция getMaxEvenElement принимает массив с целыми числами, необходимо 
+// реализовать функцию так, чтобы она возвращала значение большего элемента массива, 
+// который записан в четном индексе включая 0.
+ 
+function getMaxEvenElement(arr) {
+    let maxNum = arr[0]
+    for (let i = 2; i < arr.lenght; i+=2) {
+        if (arr[i] > maxNum){
+            maxNum = arr[i];
+        }
+    }
+    return maxNum
+
 }
+ 
+console.log(getMaxEvenElement([5, 7, -1, 12, 3, 0])); // 5
+console.log(getMaxEvenElement([4, -12, 29, 6, 31, 92, -50])); // 31
+
+// function getMaxEvenElement(arr) {
+//     return Math.max(...arr.filter((_, i) => i % 2 == 0));
+// }
+// console.log(getMaxEvenElement([5, 7, -1, 12, 3, 0])); // 5
+// console.log(getMaxEvenElement([4, -12, 29, 6, 31, 92, -50])); // 31
