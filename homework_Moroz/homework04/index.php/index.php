@@ -125,17 +125,19 @@ $expirience = [
         <div class="w3-container w3-card w3-white w3-margin-bottom">
           <h2 class="w3-text-grey w3-padding-16"><i
               class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Опыт работы</h2>
-           <div class="w3-container">
-            <h5 class="w3-opacity"><b><?php echo $expirience[0]['position']; ?> </b></h5>
-            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><?php echo $expirience[0]['begin']; ?> - <span
-                class="w3-tag w3-teal w3-round"><?php echo $expirience[0]['end']; ?></span></h6>
-            <p><?php echo $expirience[0]['description']; ?></p>
-            <hr>
-          </div>
-          <?php for ($i = 1; $i < count($expirience); $i++):?>
+          <?php for ($i = 0; $i < count($expirience); $i++):?>
           <div class="w3-container">
             <h5 class="w3-opacity"><b><?php echo $expirience[$i]['position']; ?> </b></h5>
-            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><?php echo $expirience[$i]['begin']; ?> - <?php echo $expirience[$i]['end']; ?></h6>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>
+            <?php echo $expirience[$i]['begin']; ?> -
+            <?php if ($i == 0): ?> 
+                <span class="w3-tag w3-teal w3-round">
+                    <?php echo $expirience[$i]['end']; ?>
+                </span>
+            <?php else: ?> 
+                <?php echo $expirience[$i]['end']; ?>
+            <?php endif; ?> 
+            </h6>
             <p><?php echo $expirience[$i]['description']; ?></p>
             <hr>
           </div>
