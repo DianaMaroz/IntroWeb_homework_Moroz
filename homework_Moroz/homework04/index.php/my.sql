@@ -22,4 +22,4 @@ VALUES ('Мария Кулеш', 17, 'Москва, Радужная, 36-10');
 INSERT INTO classmates(name, age, address) 
 VALUES ('Дмитрий Дмитраница', 29, 'Рабочая, 47-111, Москва');
 
-SELECT name FROM classmates WHERE  age >=18 AND age <30 AND address like '%Москва%'
+SELECT name FROM classmates WHERE  age >= 18 AND age < 30 AND address LIKE'%Москва%';
